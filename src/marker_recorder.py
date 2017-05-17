@@ -22,7 +22,7 @@ def callback_marker(data):
 if __name__ == '__main__':
     
     # ros node init
-    rospy.init_node('recorder_marker', anonymous=True)
+    rospy.init_node('recorder_marker_node', anonymous=True)
     
     # maker file read directory
     fileDir_marker = sys.path[0]+"/../datasets/marker_data0.txt"

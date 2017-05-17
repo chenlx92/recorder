@@ -15,7 +15,7 @@ def callback_emg(data):
 if __name__ == '__main__':
     
     # ros node init
-    rospy.init_node('recorder_emg', anonymous=True)
+    rospy.init_node('recorder_emg_node', anonymous=True)
     
     #emg file read directory
     fileDir_emg = sys.path[0]+"/../datasets/emg_data0.txt"
