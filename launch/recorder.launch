@@ -1,0 +1,18 @@
+<launch>
+
+    <!-- setup myo emg capture  -->
+    <include file="$(find myo_driver)/launch/myo_pub.launch">
+    </include>
+    
+    <!-- setup marker capture  -->
+    <include file="$(find aruco_ros)/launch/marker_motion_track.launch">
+    </include>
+
+    <!-- record the emg  -->
+    <node name="recorder_emg_node" pkg="recorder" type="emg_recorder.py" /> 
+    
+    <!-- record the marker  -->
+    <node name="recorder_marker_node" pkg="recorder" type="marker_recorder.py"  />
+    
+    
+</launch>
