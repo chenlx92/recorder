@@ -1,7 +1,7 @@
 <launch>
 
     <!-- setup myo emg capture  -->
-    <include file="$(find myo_driver)/launch/myo_pub.launch">
+    <include file="$(find myo_driver)/launch/myo_raw_pub.launch">
     </include>
     
     <!-- setup marker capture  -->
