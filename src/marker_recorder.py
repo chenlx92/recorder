@@ -13,7 +13,7 @@ def callback_marker(data):
     qy_marker = data.pose.orientation.y
     qz_marker = data.pose.orientation.z
     qw_marker = data.pose.orientation.w
-    f_marker.write(str(x_marker)+' '+str(y_marker)+' '+str(z_marker)+' '+
+    f_marker.write(str(data.header.stamp)+' '+str(x_marker)+' '+str(y_marker)+' '+str(z_marker)+' '+
             str(qx_marker)+' '+str(qy_marker)+' '+str(qz_marker)+' '+
             str(qw_marker)+' '+'\n')
     rospy.loginfo("marker data recording")    
