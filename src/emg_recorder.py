@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import sys
 import rospy
-from myo_driver.msg import emg_ch
+from myo_driver.msg import emgState
 
 
 def callback_emg(data):
@@ -21,7 +21,7 @@ if __name__ == '__main__':
     #emg file read directory
     fileDir_emg = sys.path[0]+"/../datasets/emg_data0.txt"
     f_emg=open(fileDir_emg,'w')
-    rospy.Subscriber("myo_raw_pub", emg_ch, callback_emg)
+    rospy.Subscriber("myo_raw_pub", emgState, callback_emg)
     
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
