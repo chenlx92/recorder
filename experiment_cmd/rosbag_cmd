@@ -1,0 +1,1 @@
+rosbag record /myo_raw_emg_pub /myo_raw_imu_pub /robot/joint_states /robot/limb/left/endpoint_state
